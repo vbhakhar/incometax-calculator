@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.vineetbhakhar.incometaxcalculator.CalculatedTaxAndSavings">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:id="@+id/blue_box"
+            android:orientation="vertical"
+            android:elevation="1dp"
+            android:measureWithLargestChild="false">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Medium Text"
+                android:id="@+id/calcMessage"
+                android:layout_margin="16dp"
+                android:textColor="@android:color/white"
+                android:hapticFeedbackEnabled="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Medium Text"
+                android:id="@+id/taxMessage"
+                android:layout_marginTop="0dp"
+                android:paddingBottom="16dp"
+                android:textColor="@android:color/white"
+                android:hapticFeedbackEnabled="false"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp" />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="16dp"
+                    android:measureWithLargestChild="false"
+                    android:id="@+id/HRA"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingBottom="0dp">
+
+                    <android.support.v7.widget.CardView
+                        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/card_view"
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        card_view:cardCornerRadius="4dp"
+                        card_view:cardUseCompatPadding="true">
+
+                        <TextView
+                            android:id="@+id/cardText_HRA"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="sdfasdf"
+                            android:padding="16dp" />
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:measureWithLargestChild="false"
+                    android:paddingBottom="0dp"
+                    android:paddingLeft="8dp"
+                    android:id="@+id/savingOnInvestments"
+                    android:paddingTop="8dp"
+                    android:paddingRight="8dp">
+
+                    <android.support.v7.widget.CardView
+                        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/card_view2"
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        card_view:cardCornerRadius="4dp"
+                        card_view:cardUseCompatPadding="true"
+                        android:clickable="false">
+
+                        <TextView
+                            android:id="@+id/cardText_savingOnInvestments"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="sdfasdf"
+                            android:padding="16dp" />
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:measureWithLargestChild="false"
+                    android:paddingBottom="0dp"
+                    android:paddingLeft="8dp"
+                    android:id="@+id/savingOnEduLoan"
+                    android:paddingTop="8dp"
+                    android:paddingRight="8dp">
+
+                    <android.support.v7.widget.CardView
+                        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/card_view3"
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        card_view:cardCornerRadius="4dp"
+                        card_view:cardUseCompatPadding="true"
+                        android:clickable="false">
+
+                        <TextView
+                            android:id="@+id/cardText_savingOnEduLoan"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="sdfasdf"
+                            android:padding="16dp" />
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+
+    <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin"
+            android:src="@drawable/abc_ic_menu_share_mtrl_alpha"
+            app:layout_anchor="@id/blue_box"
+            app:layout_anchorGravity="bottom|end" />
+
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>

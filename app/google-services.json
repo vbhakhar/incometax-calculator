@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "922445926229",
+    "firebase_url": "https://tasic-fd546.firebaseio.com",
+    "project_id": "tasic-fd546",
+    "storage_bucket": "tasic-fd546.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:922445926229:android:1cfaaa4a0023c612",
+        "android_client_info": {
+          "package_name": "com.vineetbhakhar.incometaxcalculator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "922445926229-u9nngvgtvpvgjkvrqcj3u9qf3joheiud.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBD5tZl5MGQLOMzmL2VUsFBXc7pRUA--Bw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
